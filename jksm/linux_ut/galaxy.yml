@@ -16,7 +16,7 @@ readme: README.md
 # A list of the collection's content authors. Can be just the name or in the format 'Full Name <email> (url)
 # @nicks:irc/im.site#channel'
 authors:
-- "jksm (E-Mail: j.kasama.dev@gmail.com)"
+- "jumpei kasama <j.kasama.dev@gmail.com>"
 
 
 ### OPTIONAL but strongly recommended
@@ -66,4 +66,3 @@ build_ignore: []
 # 'omit_default_directives' is a boolean that controls whether the default directives are used. Mutually exclusive
 # with 'build_ignore'
 # manifest: null
-
