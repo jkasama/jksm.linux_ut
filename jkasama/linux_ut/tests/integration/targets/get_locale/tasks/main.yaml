@@ -1,0 +1,14 @@
+- name: Gather system Locale Informations
+  jkasama.linux_ut.get_locale:
+  register: result
+
+- name: Debug
+  ansible.builtin.debug:
+    var: result
+
+- name: Assertions
+  ansible.builtin.assert:
+    that:
+      - "{{ result.language_code | length() > 0 }}"
+      - "{{ result.locale_details | length() > 0 }}"
+      - "{{ result.system_locale == 'UTF-8' }}"

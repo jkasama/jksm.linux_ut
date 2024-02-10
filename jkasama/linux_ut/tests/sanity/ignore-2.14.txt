@@ -1,0 +1,2 @@
+plugins/modules/get_locale.py import-2.7
+plugins/modules/get_locale.py compile-2.7
