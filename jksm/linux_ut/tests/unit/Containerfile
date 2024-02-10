@@ -1,3 +1,0 @@
-FROM quay.io/ansible/default-test-container:7.14.0
-
-RUN pip3 install pytest-asyncio
