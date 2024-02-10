@@ -92,7 +92,9 @@ async def get_locale_details(str_code):
     for field in fields:
         key = field.split("=")[0]
         # Omit double Quate
-        value = field.split("=")[1][1:-1]
+        value = field.split("=")[1]
+        if len(value) > 0 and value[0] == '"':
+            value = value[1:-1]
         result.update({
             key: value
         })
